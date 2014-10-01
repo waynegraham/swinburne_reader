@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "classie": "~1.0.1",
-    "skidding--dragdealer": "~0.9.7"
+    "skidding--dragdealer": "~0.9.7",
+    "modernizr": "~2.8.3"
   }
 }
