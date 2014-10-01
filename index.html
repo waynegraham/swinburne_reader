@@ -1,21 +1,169 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta http-equiv="charset" content="utf-8" />
-  <title></title>
-  
-</head>
-<body>
-<figure class="figure-container">
-  <img src="" alt="1787 Edition">
-  <spn class="image-label" data-type="1784">1787 Edition</span>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Poems and Ballads Reader</title>
+		<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+		<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header id="header" class="codrops-header">
+				<h1>Swinburne Reader</h1>
+				<span class="message">This mobile version does not have the switch</span>
+				<button class="slider-switch">Switch view</button>
+			</header>
+			<div id="overlay" class="overlay">
+				<div class="info">
+					<h2>Swinburne Interactions</h2>
+					<span class="info-drag">Drag Sliders</span>
+					<span class="info-keys">Use Arrows</span>
+					<span class="info-switch">Switch view</span>
+					<button>Got it!</button>
+				</div>
+			</div>
+			<div id="slideshow" class="dragslider">
+				<section class="img-dragger img-dragger-large dragdealer">
+					<div class="handle">
+						<div class="slide" data-content="content-1">
+							<div class="img-wrap"><img src="img/1.jpg" alt="img1"/></div>
+							<h2>A Ballad of Life<span></span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-2">
+							<div class="img-wrap"><img src="img/2.jpg" alt="img2"/></div>
+							<h2>A Ballad of Death <span>&nbsp;</span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-3">
+							<div class="img-wrap"><img src="img/3.jpg" alt="img3"/></div>
+							<h2>Laus Veneris <span></span></h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-4">
+							<div class="img-wrap"><img src="img/4.jpg" alt="img4"/></div>
+							<h2>Phædra</h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-5">
+							<div class="img-wrap"><img src="img/5.jpg" alt="img5"/></div>
+							<h2>The Triumph of Time</h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-6">
+							<div class="img-wrap"><img src="img/6.jpg" alt="img6"/></div>
+							<h2>Les Noyades</h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-7">
+							<div class="img-wrap"><img src="img/7.jpg" alt="img7"/></div>
+							<h2>A Leave-Taking</h2>
+							<button class="content-switch">Read more</button>
+						</div>
+						<div class="slide" data-content="content-8">
+							<div class="img-wrap"><img src="img/8.jpg" alt="img8"/></div>
+							<h2>Itylus</h2>
+							<button class="content-switch">Read more</button>
+						</div>
+					</div>
+				</section><!-- /img-dragger-->
+				<!-- Content section -->
+				<section class="pages">
+					<div class="content" data-content="content-1">
+						<h2>A Ballad of Life</h2>
+						<p>poem</p>
+					</div>
+					<div class="content" data-content="content-2">
+						<h2>A Ballad of Death</h2>
+						<p>poem</p>
+					</div>
+					<div class="content" data-content="content-3">
+						<h2>Laus Veneris</h2>
+						<p>poem</p>
+					</div>
+					<div class="content" data-content="content-4">
+						<h2>PHÆDRA <span>HIPPOLYTUS; PHÆDRA; CHORUS OF TRŒZENIAN WOMEN</span></h2>
+						<p>poem</p>
+					</div>
+					<div class="content" data-content="content-5">
+						<h2>THE TRIUMPH OF TIME</h2>
+						<p>poem</p>
+					</div>
+					<div class="content" data-content="content-6">
+						<h2>LES NOYADES</h2>
+						<p>poem</p>
+					</div>
+					<div class="content" data-content="content-7">
+						<h2>A LEAVE-TAKING</h2>
+						<p>poem</p>
+					</div>
+					<div class="content" data-content="content-8">
+						<h2>ITYLUS</h2>
+						<p>poem</p>
+					</div>
+				</section>
+			</div>
+		</div><!-- /container -->
+		<script src="js/dragdealer.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/dragslideshow.js"></script>
+		<script>
+			(function() {
 
-  <div class="resize-img"
-    <img src="" alt="1784 Edition">
-    <span class="image-lable">1784 Edition<</span
-  </div>
+				var overlay = document.getElementById( 'overlay' ),
+					overlayClose = overlay.querySelector( 'button' ),
+					header = document.getElementById( 'header' )
+					switchBtnn = header.querySelector( 'button.slider-switch' ),
+					toggleBtnn = function() {
+						if( slideshow.isFullscreen ) {
+							classie.add( switchBtnn, 'view-maxi' );
+						}
+						else {
+							classie.remove( switchBtnn, 'view-maxi' );
+						}
+					},
+					toggleCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.add( header, 'hide' );
+						}
+					},
+					toggleCompleteCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.remove( header, 'hide' );
+						}
+					},
+					slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), {
+						// toggle between fullscreen and minimized slideshow
+						onToggle : toggleBtnn,
+						// toggle the main image and the content view
+						onToggleContent : toggleCtrls,
+						// toggle the main image and the content view (triggered after the animation ends)
+						onToggleContentComplete : toggleCompleteCtrls
+					}),
+					toggleSlideshow = function() {
+						slideshow.toggle();
+						toggleBtnn();
+					},
+					closeOverlay = function() {
+						classie.add( overlay, 'hide' );
+					};
 
-  <span class="handle"</span>
-</figure>
-</body>
+				// toggle between fullscreen and small slideshow
+				switchBtnn.addEventListener( 'click', toggleSlideshow );
+				// close overlay
+				overlayClose.addEventListener( 'click', closeOverlay );
+
+			}());
+		</script>
+	</body>
 </html>
