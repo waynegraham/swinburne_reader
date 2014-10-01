@@ -1,0 +1,19 @@
+{
+  "name": "swinburn_reader",
+  "version": "0.0.0",
+  "authors": [
+    "Wayne Graham <wayne.graham@virginia.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "classie": "~1.0.1",
+    "skidding--dragdealer": "~0.9.7"
+  }
+}
