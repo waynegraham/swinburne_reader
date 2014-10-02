@@ -365,11 +365,11 @@ button.content-switch::before {
 	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
 }
 
-.pages .content p:last-child {
-	padding: 5em 1em 8em;
-	text-align: center;
-	font-weight: bold;
-}
+/*.pages .content p:last-child {*/
+	/*padding: 5em 1em 8em;*/
+	/*text-align: center;*/
+	/*font-weight: bold;*/
+/*}*/
 
 .js .pages .content h2,
 .js .pages .content p {

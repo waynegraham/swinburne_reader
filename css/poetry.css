@@ -1,0 +1,12 @@
+.pages .content p.ti-1 { padding: 0.5em 4em; }
+.pages .content p.ti-2 { padding: 0.5em 6em; }
+.pages .content p.ti-3 { padding: 0.5em 8em; }
+.pages .content p.ti-4 { padding: 0.5em 10em; }
+
+.apparatus {
+  font-weight: bold;
+}
+
+.linegroup {
+  padding-bottom: 1.6em;
+}

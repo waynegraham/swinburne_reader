@@ -102,7 +102,6 @@
         <front>
             <pb n="[front1]"/>
             <div xml:id="ad.atalanta">
-                
                 <p rend="center"><hi rend="large">ATALANTA.</hi>
                 </p><p rend="center"><hi rend="sc">by ALGERNON C. SWINBURNE</hi>
                 </p><p rend="center">Fcap. 8vo, cloth, 6<emph>s.</emph>
@@ -180,6 +179,7 @@
             </div>
         </front>
         <body>
+          <div type="poem">
                 <!--<div type="opening">-->
                     <div type="recto"><head rend="center" xml:id="pab1">A BALLAD OF LIFE</head>
                         <pb n="[1]" type="recto"/>
@@ -327,8 +327,10 @@
                             <l n="1-83" rend="ti-1"> And kiss thee with soft laughter on thine eyes, </l>
                             <l n="1-84" rend="ti-2"> Ballad, and on thy mouth. </l>
                         </lg>
+                      </div>
                     </div>
-                    
+                </div>
+            </div>
                         <pb n="[5]" type="recto"/>
                         <div type="recto">
                             <head rend="center" xml:id="pab2">A BALLAD OF DEATH</head>

@@ -1,169 +1,289 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Poems and Ballads Reader</title>
-		<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
-		<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-  		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<header id="header" class="codrops-header">
-				<h1>Swinburne Reader</h1>
-				<span class="message">This mobile version does not have the switch</span>
-				<button class="slider-switch">Switch view</button>
-			</header>
-			<div id="overlay" class="overlay">
-				<div class="info">
-					<h2>Swinburne Interactions</h2>
-					<span class="info-drag">Drag Sliders</span>
-					<span class="info-keys">Use Arrows</span>
-					<span class="info-switch">Switch view</span>
-					<button>Got it!</button>
-				</div>
-			</div>
-			<div id="slideshow" class="dragslider">
-				<section class="img-dragger img-dragger-large dragdealer">
-					<div class="handle">
-						<div class="slide" data-content="content-1">
-							<div class="img-wrap"><img src="img/1.jpg" alt="img1"/></div>
-							<h2>A Ballad of Life<span></span></h2>
-							<button class="content-switch">Read more</button>
-						</div>
-						<div class="slide" data-content="content-2">
-							<div class="img-wrap"><img src="img/2.jpg" alt="img2"/></div>
-							<h2>A Ballad of Death <span>&nbsp;</span></h2>
-							<button class="content-switch">Read more</button>
-						</div>
-						<div class="slide" data-content="content-3">
-							<div class="img-wrap"><img src="img/3.jpg" alt="img3"/></div>
-							<h2>Laus Veneris <span></span></h2>
-							<button class="content-switch">Read more</button>
-						</div>
-						<div class="slide" data-content="content-4">
-							<div class="img-wrap"><img src="img/4.jpg" alt="img4"/></div>
-							<h2>Phædra</h2>
-							<button class="content-switch">Read more</button>
-						</div>
-						<div class="slide" data-content="content-5">
-							<div class="img-wrap"><img src="img/5.jpg" alt="img5"/></div>
-							<h2>The Triumph of Time</h2>
-							<button class="content-switch">Read more</button>
-						</div>
-						<div class="slide" data-content="content-6">
-							<div class="img-wrap"><img src="img/6.jpg" alt="img6"/></div>
-							<h2>Les Noyades</h2>
-							<button class="content-switch">Read more</button>
-						</div>
-						<div class="slide" data-content="content-7">
-							<div class="img-wrap"><img src="img/7.jpg" alt="img7"/></div>
-							<h2>A Leave-Taking</h2>
-							<button class="content-switch">Read more</button>
-						</div>
-						<div class="slide" data-content="content-8">
-							<div class="img-wrap"><img src="img/8.jpg" alt="img8"/></div>
-							<h2>Itylus</h2>
-							<button class="content-switch">Read more</button>
-						</div>
-					</div>
-				</section><!-- /img-dragger-->
-				<!-- Content section -->
-				<section class="pages">
-					<div class="content" data-content="content-1">
-						<h2>A Ballad of Life</h2>
-						<p>poem</p>
-					</div>
-					<div class="content" data-content="content-2">
-						<h2>A Ballad of Death</h2>
-						<p>poem</p>
-					</div>
-					<div class="content" data-content="content-3">
-						<h2>Laus Veneris</h2>
-						<p>poem</p>
-					</div>
-					<div class="content" data-content="content-4">
-						<h2>PHÆDRA <span>HIPPOLYTUS; PHÆDRA; CHORUS OF TRŒZENIAN WOMEN</span></h2>
-						<p>poem</p>
-					</div>
-					<div class="content" data-content="content-5">
-						<h2>THE TRIUMPH OF TIME</h2>
-						<p>poem</p>
-					</div>
-					<div class="content" data-content="content-6">
-						<h2>LES NOYADES</h2>
-						<p>poem</p>
-					</div>
-					<div class="content" data-content="content-7">
-						<h2>A LEAVE-TAKING</h2>
-						<p>poem</p>
-					</div>
-					<div class="content" data-content="content-8">
-						<h2>ITYLUS</h2>
-						<p>poem</p>
-					</div>
-				</section>
-			</div>
-		</div><!-- /container -->
-		<script src="js/dragdealer.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/dragslideshow.js"></script>
-		<script>
-			(function() {
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poems and Ballads Reader</title>
+<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+<meta name="author" content="Codrops" />
+<link rel="shortcut icon" href="../favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/poetry.css" />
 
-				var overlay = document.getElementById( 'overlay' ),
-					overlayClose = overlay.querySelector( 'button' ),
-					header = document.getElementById( 'header' )
-					switchBtnn = header.querySelector( 'button.slider-switch' ),
-					toggleBtnn = function() {
-						if( slideshow.isFullscreen ) {
-							classie.add( switchBtnn, 'view-maxi' );
-						}
-						else {
-							classie.remove( switchBtnn, 'view-maxi' );
-						}
-					},
-					toggleCtrls = function() {
-						if( !slideshow.isContent ) {
-							classie.add( header, 'hide' );
-						}
-					},
-					toggleCompleteCtrls = function() {
-						if( !slideshow.isContent ) {
-							classie.remove( header, 'hide' );
-						}
-					},
-					slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), {
-						// toggle between fullscreen and minimized slideshow
-						onToggle : toggleBtnn,
-						// toggle the main image and the content view
-						onToggleContent : toggleCtrls,
-						// toggle the main image and the content view (triggered after the animation ends)
-						onToggleContentComplete : toggleCompleteCtrls
-					}),
-					toggleSlideshow = function() {
-						slideshow.toggle();
-						toggleBtnn();
-					},
-					closeOverlay = function() {
-						classie.add( overlay, 'hide' );
-					};
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+<div class="container">
+  <header id="header" class="codrops-header">
+    <h1>Swinburne Reader</h1>
+    <span class="message">This mobile version does not have the switch</span>
+    <button class="slider-switch">Switch view</button>
+  </header>
+  <div id="overlay" class="overlay">
+    <div class="info">
+      <h2>Swinburne Interactions</h2>
+      <span class="info-drag">Drag Sliders</span>
+      <span class="info-keys">Use Arrows</span>
+      <span class="info-switch">Switch view</span>
+      <button>Got it!</button>
+    </div>
+  </div>
+  <div id="slideshow" class="dragslider">
+    <section class="img-dragger img-dragger-large dragdealer">
+      <div class="handle">
+        <div class="slide" data-content="content-1">
+          <div class="img-wrap"><img src="img/1.jpg" alt="img1"/></div>
+          <h2>A Ballad of Life<span></span></h2>
+          <button class="content-switch">Read more</button>
+        </div>
+        <div class="slide" data-content="content-2">
+          <div class="img-wrap"><img src="img/2.jpg" alt="img2"/></div>
+          <h2>A Ballad of Death <span>&nbsp;</span></h2>
+          <button class="content-switch">Read more</button>
+        </div>
+        <div class="slide" data-content="content-3">
+          <div class="img-wrap"><img src="img/3.jpg" alt="img3"/></div>
+          <h2>Laus Veneris <span></span></h2>
+          <button class="content-switch">Read more</button>
+        </div>
+        <div class="slide" data-content="content-4">
+          <div class="img-wrap"><img src="img/4.jpg" alt="img4"/></div>
+          <h2>Phædra</h2>
+          <button class="content-switch">Read more</button>
+        </div>
+        <div class="slide" data-content="content-5">
+          <div class="img-wrap"><img src="img/5.jpg" alt="img5"/></div>
+          <h2>The Triumph of Time</h2>
+          <button class="content-switch">Read more</button>
+        </div>
+        <div class="slide" data-content="content-6">
+          <div class="img-wrap"><img src="img/6.jpg" alt="img6"/></div>
+          <h2>Les Noyades</h2>
+          <button class="content-switch">Read more</button>
+        </div>
+        <div class="slide" data-content="content-7">
+          <div class="img-wrap"><img src="img/7.jpg" alt="img7"/></div>
+          <h2>A Leave-Taking</h2>
+          <button class="content-switch">Read more</button>
+        </div>
+        <div class="slide" data-content="content-8">
+          <div class="img-wrap"><img src="img/8.jpg" alt="img8"/></div>
+          <h2>Itylus</h2>
+          <button class="content-switch">Read more</button>
+        </div>
+      </div>
+    </section><!-- /img-dragger-->
+    <!-- Content section -->
+    <section class="pages">
+      <div class="content" data-content="content-1">
+        <h2 class="recto mc">A Ballad of Life</h2>
+        <div class="poem">
 
-				// toggle between fullscreen and small slideshow
-				switchBtnn.addEventListener( 'click', toggleSlideshow );
-				// close overlay
-				overlayClose.addEventListener( 'click', closeOverlay );
+            <div class="linegroup">
+              <p id="1-1" class="line "><span class="sc">I found</span> in dreams a place of wind and flowers, </p>
+              <p id="1-2" class="line ti-1"> Full of sweet trees and <span class="apparatus">colour</span> of glad grass, </p>
+              <p id="1-3" class="line ti-1"> In midst whereof there was </p>
+              <p id="1-4" class="line "> A lady clothed like summer with sweet <span class="apparatus">hours.</span></p>
+              <p id="1-5" class="line "> Her beauty, fervent as a fiery moon, </p>
+              <p id="1-6" class="line ti-1"> Made my blood burn and swoon </p>
+              <p id="1-7" class="line ti-2"> Like a flame rained upon. </p>
+              <p id="1-8" class="line "> Sorrow had filled her shaken eyelids' blue, </p>
+              <p id="1-9" class="line "> And her mouth's sad red heavy rose all through </p>
+              <p id="1-10" class="line ti-2"> Seemed sad with glad things gone. </p>
+            </div>
+            <div class="linegroup">
+              <p id="1-11" class="line "> She held a little cithern by the strings, </p>
+              <p id="1-12" class="line ti-1"> Shaped heartwise, strung with subtle-<span class="apparatus">coloured</span> hair </p>
+              <p id="1-13" class="line ti-1"> Of some dead lute-player </p>
+              <p id="1-14" class="line "> That in dead years had done delicious things. </p>
+            </div>
 
-			}());
-		</script>
-	</body>
+            <div class="verso">
+
+              <div class="linegroup">
+                <p id="1-15" class="line "> The seven strings were named accordingly; </p>
+                <p id="1-16" class="line ti-1"> The first string charity, </p>
+                <p id="1-17" class="line ti-2"> The second tenderness, </p>
+                <p id="1-18" class="line "> The rest were pleasure, sorrow, sleep, and sin, </p>
+                <p id="1-19" class="line "> And loving-kindness, that is pity's kin </p>
+                <p id="1-20" class="line ti-2"> And is most pitiless. </p>
+              </div>
+              <div class="linegroup">
+                <p id="1-21" class="line "> There were three men with her, each garmented </p>
+                <p id="1-22" class="line ti-1"> With gold and shod with gold upon the feet; </p>
+                <p id="1-23" class="line ti-1"> And with plucked ears of wheat </p>
+                <p id="1-24" class="line "> The first man's hair was wound upon his <span class="apparatus">head.</span></p>
+                <p id="1-25" class="line "> His face was red, and his mouth curled and sad; </p>
+                <p id="1-26" class="line ti-1"> All his gold <span class="apparatus">raiment</span> had </p>
+                <p id="1-27" class="line ti-2"> Pale stains of dust and rust. </p>
+                <p id="1-28" class="line "> A riven hood was pulled across his eyes; </p>
+                <p id="1-29" class="line "> The token of him being upon this wise </p>
+                <p id="1-30" class="line ti-2"> Made for a sign of Lust. </p>
+              </div>
+              <div class="linegroup">
+                <p id="1-31" class="line "> The next was Shame, with hollow heavy face </p>
+                <p id="1-32" class="line ti-1"> <span class="apparatus">Coloured</span> like green wood when flame kindles it. </p>
+                <p id="1-33" class="line ti-1"> He hath such feeble feet </p>
+                <p id="1-34" class="line "> They may not well endure in any place. </p>
+                <p id="1-35" class="line "> His face was full of grey old miseries, </p>
+                <p id="1-36" class="line ti-1"> And all his blood's increase </p>
+                <p id="1-37" class="line ti-2"> Was even increase of pain. </p>
+                <p id="1-38" class="line "> The last was Fear, that is akin to Death; </p>
+                <p id="1-39" class="line "> He is Shame's friend, and always as Shame saith </p>
+                <p id="1-40" class="line ti-2"> Fear answers him again. </p>
+              </div>
+            </div>
+            <div class="recto">
+
+              <div class="linegroup">
+                <p id="1-41" class="line "> My soul said in <span class="apparatus">me;</span> This is <span class="apparatus">marvellous</span>, </p>
+                <p id="1-42" class="line ti-1"> Seeing the air's face is not so delicate </p>
+                <p id="1-43" class="line ti-1"> Nor the sun's grace so great, </p>
+                <p id="1-44" class="line "> If sin and she be kin or amorous. </p>
+                <p id="1-45" class="line "> And seeing where maidens served her on their knees, </p>
+                <p id="1-46" class="line ti-1"> I bade one crave of these </p>
+                <p id="1-47" class="line ti-2"> To know the cause thereof. </p>
+                <p id="1-48" class="line "> Then Fear said: I am Pity that was dead. </p>
+                <p id="1-49" class="line "> And Shame said: I am Sorrow comforted. </p>
+                <p id="1-50" class="line ti-2"> And Lust said: I am Love. </p>
+              </div>
+              <div class="linegroup">
+                <p id="1-51" class="line "> Thereat her hands began a lute-playing, </p>
+                <p id="1-52" class="line ti-1"> And her sweet mouth a song in a strange tongue; </p>
+                <p id="1-53" class="line ti-1"> And all the while she sung </p>
+                <p id="1-54" class="line "> There was no sound but long tears following </p>
+                <p id="1-55" class="line "> Long tears upon men's <span class="apparatus">faces waxen</span> white </p>
+                <p id="1-56" class="line ti-1"> With extreme sad delight. </p>
+                <p id="1-57" class="line ti-2"> But those three following men </p>
+                <p id="1-58" class="line "> Became as men raised up among the dead; </p>
+                <p id="1-59" class="line "> Great glad mouths <span class="apparatus">open and</span> fair cheeks made red </p>
+                <p id="1-60" class="line ti-2"> With child's blood come again. </p>
+              </div>
+              <div class="linegroup">
+                <p id="1-61" class="line "> Then I said: Now assuredly I see </p>
+                <p id="1-62" class="line ti-1"> My lady is perfect, and transfigureth </p>
+                <p id="1-63" class="line ti-1"> All sin and sorrow and death, </p>
+                <p id="1-64" class="line "> Making them fair as her own eyelids be, </p>
+                <p id="1-65" class="line "> Or lips wherein my whole soul's life abides; </p>
+                <p id="1-66" class="line ti-1"> Or as her sweet white sides </p>
+              </div>
+            </div>
+
+            <div class="verso">
+
+              <div class="linegroup">
+                <p id="1-67" class="line ti-2"> And bosom carved to kiss. </p>
+                <p id="1-68" class="line "> Now therefore, if her pity further me, </p>
+                <p id="1-69" class="line "> Doubtless for her sake all my days shall be </p>
+                <p id="1-70" class="line ti-2"> As righteous as she is. </p>
+              </div>
+              <div class="linegroup">
+                <p id="1-71" class="line "> Forth, ballad, and take roses in both arms, </p>
+                <p id="1-72" class="line ti-1"> Even till the top rose touch thee in the throat </p>
+                <p id="1-73" class="line "> Where the least thornprick harms; </p>
+                <p id="1-74" class="line ti-1"> And girdled in thy golden singing-coat, </p>
+                <p id="1-75" class="line "> Come thou before my lady and say <span class="apparatus">this;</span></p>
+                <p id="1-76" class="line ti-1"> Borgia, thy gold hair's <span class="apparatus">colour</span> burns in me, </p>
+                <p id="1-77" class="line ti-2"> Thy mouth makes beat my blood in feverish rhymes; </p>
+                <p id="1-78" class="line ti-1"> Therefore so many as these roses be, </p>
+                <p id="1-79" class="line ti-2"> Kiss me so many times. </p>
+                <p id="1-80" class="line "> Then it may be, seeing how sweet she is, </p>
+                <p id="1-81" class="line ti-1"> That she will stoop herself none otherwise </p>
+                <p id="1-82" class="line ti-2"> Than a blown vine-branch doth, </p>
+                <p id="1-83" class="line ti-1"> And kiss thee with soft laughter on thine eyes, </p>
+                <p id="1-84" class="line ti-2"> Ballad, and on thy mouth. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content" data-content="content-2">
+        <h2>A Ballad of Death</h2>
+        <p>poem</p>
+      </div>
+      <div class="content" data-content="content-3">
+        <h2>Laus Veneris</h2>
+        <p>poem</p>
+      </div>
+      <div class="content" data-content="content-4">
+        <h2>PHÆDRA <span>HIPPOLYTUS; PHÆDRA; CHORUS OF TRŒZENIAN WOMEN</span></h2>
+        <p>poem</p>
+      </div>
+      <div class="content" data-content="content-5">
+        <h2>THE TRIUMPH OF TIME</h2>
+        <p>poem</p>
+      </div>
+      <div class="content" data-content="content-6">
+        <h2>LES NOYADES</h2>
+        <p>poem</p>
+      </div>
+      <div class="content" data-content="content-7">
+        <h2>A LEAVE-TAKING</h2>
+        <p>poem</p>
+      </div>
+      <div class="content" data-content="content-8">
+        <h2>ITYLUS</h2>
+        <p>poem</p>
+      </div>
+    </section>
+  </div>
+</div><!-- /container -->
+<script src="js/dragdealer.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/dragslideshow.js"></script>
+<script>
+(function() {
+
+ var overlay = document.getElementById( 'overlay' ),
+ overlayClose = overlay.querySelector( 'button' ),
+ header = document.getElementById( 'header' )
+ switchBtnn = header.querySelector( 'button.slider-switch' ),
+ toggleBtnn = function() {
+ if( slideshow.isFullscreen ) {
+ classie.add( switchBtnn, 'view-maxi' );
+ }
+ else {
+ classie.remove( switchBtnn, 'view-maxi' );
+ }
+ },
+ toggleCtrls = function() {
+ if( !slideshow.isContent ) {
+ classie.add( header, 'hide' );
+ }
+ },
+ toggleCompleteCtrls = function() {
+ if( !slideshow.isContent ) {
+   classie.remove( header, 'hide' );
+ }
+ },
+ slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), {
+     // toggle between fullscreen and minimized slideshow
+onToggle : toggleBtnn,
+// toggle the main image and the content view
+onToggleContent : toggleCtrls,
+// toggle the main image and the content view (triggered after the animation ends)
+onToggleContentComplete : toggleCompleteCtrls
+}),
+ toggleSlideshow = function() {
+   slideshow.toggle();
+   toggleBtnn();
+ },
+ closeOverlay = function() {
+   classie.add( overlay, 'hide' );
+ };
+
+// toggle between fullscreen and small slideshow
+switchBtnn.addEventListener( 'click', toggleSlideshow );
+// close overlay
+overlayClose.addEventListener( 'click', closeOverlay );
+
+}());
+</script>
+</body>
 </html>
