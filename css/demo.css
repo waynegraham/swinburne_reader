@@ -1,3 +1,11 @@
+.recto {
+  float: left;
+}
+
+.verso {
+  float: left;
+}
+
 @font-face {
 	font-weight: normal;
 	font-style: normal;
